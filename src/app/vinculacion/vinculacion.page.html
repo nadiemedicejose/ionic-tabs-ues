@@ -1,9 +1,29 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>vinculacion</ion-title>
+  <ion-toolbar color="vino">
+    <ion-title>Vinculación</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="melon">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Vinculación</ion-card-title>
+      <ion-card-subtitle>Acércate a la UES</ion-card-subtitle>
+    </ion-card-header>
+    
+    <img src="assets/images/egresados.jpg">
+    <ion-card-content>
+      <p class="ion-text-justify">La Universidad Estatal de Sonora tiene como uno de sus propósitos ser un vínculo permanente con todos los sectores de la sociedad, para promover y facilitar el conjunto estructurado y regulado de servicios, procesos y prácticas de las acciones de docencia que se realizan en nuestra Universidad, con el fin de contribuir a resolver necesidades y requerimientos bajo convenios que aseguren beneficios mutuos, fortaleciendo así el posicionamiento institucional y la pertinencia de los programas de docencia, investigación y extensión.</p>
+    </ion-card-content>
+  </ion-card>
 
+  <ion-card *ngFor="let vinculo of vinculos">
+    <ion-card-header>
+      <ion-card-title>{{vinculo.vinculo}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p class="ion-text-justify">{{vinculo.descripcion}}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

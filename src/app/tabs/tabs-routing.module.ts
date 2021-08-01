@@ -28,6 +28,10 @@ const routes: Routes = [
         loadChildren: () => import('../conocenos/conocenos.module').then( m => m.ConocenosPageModule)
       },
       {
+        path: 'vinculacion',
+        loadChildren: () => import('../vinculacion/vinculacion.module').then( m => m.VinculacionPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
