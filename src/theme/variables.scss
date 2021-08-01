@@ -1,6 +1,42 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+:root {
+  --ion-color-vino: #5F2A2B;
+  --ion-color-vino-rgb: 95,42,43;
+  --ion-color-vino-contrast: #ffffff;
+  --ion-color-vino-contrast-rgb: 255,255,255;
+  --ion-color-vino-shade: #542526;
+  --ion-color-vino-tint: #6f3f40;
+}
+
+.ion-color-vino {
+  --ion-color-base: var(--ion-color-vino);
+  --ion-color-base-rgb: var(--ion-color-vino-rgb);
+  --ion-color-contrast: var(--ion-color-vino-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-vino-contrast-rgb);
+  --ion-color-shade: var(--ion-color-vino-shade);
+  --ion-color-tint: var(--ion-color-vino-tint);
+}
+
+:root {
+  --ion-color-anaranjado: #F59E00;
+  --ion-color-anaranjado-rgb: 245,158,0;
+  --ion-color-anaranjado-contrast: #000000;
+  --ion-color-anaranjado-contrast-rgb: 0,0,0;
+  --ion-color-anaranjado-shade: #d88b00;
+  --ion-color-anaranjado-tint: #f6a81a;
+}
+
+.ion-color-anaranjado {
+  --ion-color-base: var(--ion-color-anaranjado);
+  --ion-color-base-rgb: var(--ion-color-anaranjado-rgb);
+  --ion-color-contrast: var(--ion-color-anaranjado-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-anaranjado-contrast-rgb);
+  --ion-color-shade: var(--ion-color-anaranjado-shade);
+  --ion-color-tint: var(--ion-color-anaranjado-tint);
+}
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
