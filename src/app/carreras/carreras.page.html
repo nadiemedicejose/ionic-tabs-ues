@@ -1,9 +1,16 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>carreras</ion-title>
+  <ion-toolbar color="vino">
+    <ion-title>Carreras</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item *ngFor="let carrera of carreras">
+      <ion-button color="anaranjado">
+        <ion-icon name="book" color="light"></ion-icon>
+      </ion-button>
+      {{carrera.titulo}}
+    </ion-item>
+  </ion-list>
 </ion-content>
