@@ -1,9 +1,18 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>directorio</ion-title>
+  <ion-toolbar color="vino">
+    <ion-title>Directorio</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content color="melon">
+  <ion-card *ngFor="let contacto of lista">
+    <ion-card-header>
+      <ion-card-title>{{contacto.titulo}}</ion-card-title>
+      <ion-card-subtitle>{{contacto.nombre}}</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content class="ion-text-center">
+      <img [src]="contacto.imagen">
+    </ion-card-content>
+  </ion-card>
 </ion-content>
