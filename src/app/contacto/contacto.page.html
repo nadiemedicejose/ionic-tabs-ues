@@ -1,9 +1,43 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>contacto</ion-title>
+  <ion-toolbar color="vino">
+    <ion-title>Contacto</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="melon">
+  <ion-item-group>
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input placeholder="Ingresa tu nombre"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="email" placeholder="Ingresa tu correo"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Unidad académica</ion-label>
+      <ion-select placeholder="Selecciona tu unidad académica">
+        <ion-select-option value="hermosillo">Hermosillo</ion-select-option>
+        <ion-select-option value="navojoa">Navojoa</ion-select-option>
+        <ion-select-option value="magdalena">Magdalena</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Teléfono</ion-label>
+      <ion-input type="tel" placeholder="Ingresa tu teléfono"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Mensaje</ion-label>
+      <ion-textarea autocorrect="on" placeholder="Sé descriptivo con tu mensaje, si es dirigido a un área en particular, no olvides mencionarla"></ion-textarea>
+    </ion-item>
+  </ion-item-group>
 
+  <ion-button color="anaranjado">
+    <ion-icon name="paper-plane-outline" slot="start"></ion-icon>
+    Enviar mensaje
+  </ion-button>
 </ion-content>
