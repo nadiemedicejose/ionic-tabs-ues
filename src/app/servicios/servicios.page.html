@@ -1,9 +1,16 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>servicios</ion-title>
+  <ion-toolbar color="vino">
+    <ion-title>Servicios</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item *ngFor="let servicio of servicios">
+      <ion-button color="vino">
+        <ion-icon name="{{servicio.icono}}" color="melon"></ion-icon>
+      </ion-button>
+      {{servicio.servicio}}
+    </ion-item>
+  </ion-list>
 </ion-content>
